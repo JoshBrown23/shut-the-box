@@ -3,7 +3,9 @@ input {
 }
 
 body {
-    background-image: url(shut-the-box.jpg);
+    background-image: url(shut-the-box\shut-the-box.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button {
