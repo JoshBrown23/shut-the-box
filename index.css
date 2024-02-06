@@ -6,6 +6,7 @@ body {
     background-image: url(https://johnlewis.scene7.com/is/image/JohnLewis/234470519?$rsp-pdp-port-320$);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0% -50%;
     font-family: sans-serif;
 }
 
@@ -16,8 +17,6 @@ h1 {
 }
 
 p {
-    text-align: center;
-    font-size: medium;
     font-weight: bold;
 }
 
@@ -28,5 +27,9 @@ button {
     margin-bottom: 5px;
     color: white;
     font-weight: bold;
+    text-align: center;
+}
+
+#div {
     text-align: center;
 }
