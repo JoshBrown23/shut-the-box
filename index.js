@@ -19,7 +19,7 @@ function DoCalculations() {
 }
 
 const enterBtn = document.getElementById("enter-btn");
-
+enterBtn.addEventListener("click", () => RollDice());
 window.addEventListener("keypress", ({key}) => {
   if (key == "Enter")
     enterBtn.RollDice();
