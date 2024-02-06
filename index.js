@@ -18,7 +18,7 @@ function DoCalculations() {
     document.getElementById("calculations").innerHTML = calculation;
 }
 
-document.getElementById("enter-btn").addEventListener("keypress", ({key}) => {
+window.document.getElementById("enter-btn").addEventListener("keypress", ({key}) => {
     if (key = "Enter") {
         RollDice();
     }
