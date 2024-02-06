@@ -18,3 +18,10 @@ function DoCalculations() {
     document.getElementById("calculations").innerHTML = calculation;
 }
 
+const enterBtn = document.getElementById("enter-btn");
+
+window.addEventListener("keypress", ({key}) => {
+  if (key == "Enter")
+    enterBtn.RollDice();
+});
+
