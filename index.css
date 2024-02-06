@@ -6,6 +6,19 @@ body {
     background-image: url(https://johnlewis.scene7.com/is/image/JohnLewis/234470519?$rsp-pdp-port-320$);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+p {
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
 }
 
 button {
@@ -15,4 +28,5 @@ button {
     margin-bottom: 5px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
