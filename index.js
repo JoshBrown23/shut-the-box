@@ -18,8 +18,8 @@ function DoCalculations() {
     document.getElementById("calculations").innerHTML = calculation;
 }
 
-window.document.getElementById("enter-btn").addEventListener("keypress", ({key}) => {
-    if (key = "Enter") {
+window.document.getElementById("enter-btn").addEventListener("keypress", function (event) {
+    if (event.keyCode == 13) {
         RollDice();
     }
 });
