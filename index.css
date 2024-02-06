@@ -3,7 +3,7 @@ input {
 }
 
 body {
-    background-image: url('shut-the-box.jpg');
+    background-image: url(shut-the-box.jpg);
 }
 
 button {
