@@ -30,18 +30,20 @@ button {
     text-align: center;
 }
 
-.container .box {
-    display : flex;
-    flex-direction : row;
-    
- }
- .container .box .gen-info {
-    font-size: small ; 
+.gen-info {
+    width: 50%;
+    height: 100px;
+    float: left;
+    font-size: small; 
     text-align:left
-  }
- .container .box .dice-info {
-     text-align:right
- }
+}
+.dice-info {
+    width: 50%;
+    height: 100px;
+    float: right;
+    text-align:right
+
+}
 
 @media (max-width: 600px) {
     nav, article {
