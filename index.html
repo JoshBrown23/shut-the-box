@@ -7,12 +7,20 @@
         <script src="index.js"></script>
     </head>
 
-    <p>Hello</p>
-
     <body onload="RollDice()">
         <h1>Shut The Box!</h1>
         <div>
-            <div id="div">
+            <div id="info">
+                <p>Welcome to a web-based dice roller for the game "Shut the box!"</p>
+                <p>This application does not track which numbers are closed, this is only a replacement for rolling the dice.</p>
+                <p>To play, just press the "Roll Dice" button, and two d6 dice will be "rolled."</p>
+                <p>Below the generated values, you will see which numbers can be closed.</p>
+                <p>If you can't close at least one number per roll, you lose...</p>
+                <p>If you manage to close all of the numbers, you win!</p>
+                <p>Good luck!</p>
+                    
+            </div>
+            <div id="num">
                 <button id="enter-btn" onclick="RollDice()" type="button">Roll Dice</button><br>
                 Die 1: <input id="die1" type="text" value="" size="5" disabled><br>
                 Die 2: <input id="die2" type="text" value="" size="5" disabled><br><br>
