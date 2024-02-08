@@ -41,6 +41,7 @@ button {
     width: 50%;
     height: 100px;
     float: right;
+    font-size: small;
     text-align:right
 
 }
