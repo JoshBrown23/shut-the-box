@@ -31,13 +31,13 @@ button {
 }
 
 #num {
-    display: inline-block;
+    float: right;
     margin: 50%;
     padding: 45%;
 }
 
 #info {
-    display: inline-block;
+    float: left;
     margin: 50%;
     padding: 45%;
 }
