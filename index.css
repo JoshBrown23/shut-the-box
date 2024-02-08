@@ -32,13 +32,13 @@ button {
 
 #num {
     float: right;
-    margin: 100px;
+    margin: 60px;
     padding: 50px;
 }
 
 #info {
     float: left;
-    margin: 100px;
+    margin: 60px;
     padding: 50px;
 }
 
