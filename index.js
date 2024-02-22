@@ -26,7 +26,7 @@ input.addEventListener("keydown", function (event) {
 });
 
 async function fetchGenerateNum1To6() {
-    const url = "shut-the-box-server.azurewebsites.net" + "/generateNum1To6";
+    const url = "https://shut-the-box-server.azurewebsites.net/" + "/generateNum1To6";
     
     for (i = 1; i < 3; i++) {
         const response = await fetch(url);
