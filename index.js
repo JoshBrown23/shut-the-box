@@ -21,16 +21,18 @@ function DoCalculations() {
 var input = document.getElementById("enter-btn");
 input.addEventListener("keydown", function (event) {
     if (event.key == "Enter") {
-        RollDice();
+        fetchGenerateNum1To6();
     }
 });
 
 async function fetchGenerateNum1To6() {
     const url = "https://shut-the-box-server.azurewebsites.net" + "/generateNum1To6";
     
+    for (i = 1; i < 3; i++) {
         const response = await fetch(url);
         const responseText = await response.text();
-        document.getElementById("die1").innerHTML = responseText;
+        document.getElementById("die" + i).innerHTML = responseText;
+    }
 
     DoCalculations();
 }
