@@ -18,12 +18,14 @@ function DoCalculations() {
     document.getElementById("calculations").innerHTML = calculation;
 }
 
-var input = document.getElementById("enter-btn");
-input.addEventListener("keydown", function (event) {
-    if (event.key == "Enter") {
-        fetchGenerateNum1To6();
-    }
-});
+// var input = document.getElementById("enter-btn");
+// input.addEventListener("keydown", function (event) {
+//     if (event.key == "Enter") {
+//         fetchGenerateNum1To6();
+//     }
+// });
+
+document.getElementById('enter-btn').focus();
 
 async function fetchGenerateNum1To6() {
     const url = "https://shut-the-box-server.azurewebsites.net" + "/generateNum1To6";
