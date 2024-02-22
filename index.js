@@ -1,9 +1,9 @@
-function RollDice() {
-    document.getElementById("die1").value = Math.floor(Math.random() * 6) + 1;
-    document.getElementById("die2").value = Math.floor(Math.random() * 6) + 1;
+// function RollDice() {
+//     document.getElementById("die1").value = Math.floor(Math.random() * 6) + 1;
+//     document.getElementById("die2").value = Math.floor(Math.random() * 6) + 1;
     
-    DoCalculations();
-}
+//     DoCalculations();
+// }
 
 function DoCalculations() {
     d1 = document.getElementById("die1").value;
@@ -24,4 +24,16 @@ input.addEventListener("keydown", function (event) {
         RollDice();
     }
 });
+
+async function fetchGenerateNum1To6() {
+    const url = "url here" + "/generateNum1To6";
+    
+    for (i = 1; i < 3; i++) {
+        const response = await fetch(url);
+        const responseText = await response.text();
+        document.getElementById("die" + i).innerHTML = responseText
+    }
+
+    DoCalculations();
+}
 
