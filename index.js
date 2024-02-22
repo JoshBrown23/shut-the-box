@@ -26,13 +26,11 @@ input.addEventListener("keydown", function (event) {
 });
 
 async function fetchGenerateNum1To6() {
-    const url = "https://shut-the-box-server.azurewebsites.net/" + "/generateNum1To6";
+    const url = "https://shut-the-box-server.azurewebsites.net" + "/generateNum1To6";
     
-    for (i = 1; i < 3; i++) {
         const response = await fetch(url);
         const responseText = await response.text();
-        document.getElementById("die" + i).innerHTML = responseText
-    }
+        document.getElementById("die1").innerHTML = responseText;
 
     DoCalculations();
 }
