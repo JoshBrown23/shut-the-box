@@ -25,7 +25,7 @@ function DoCalculations() {
 //     }
 // });
 
-document.getElementById('enter-btn').focus();
+// document.getElementById('enter-btn').focus();
 
 async function fetchGenerateNum1To6() {
     const url = "https://shut-the-box-server.azurewebsites.net" + "/generateNum1To6";
