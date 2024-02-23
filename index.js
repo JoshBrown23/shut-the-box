@@ -28,12 +28,14 @@ function DoCalculations() {
 // document.getElementById('enter-btn').focus();
 
 async function fetchGenerateNum1To6() {
-    const url = "https://shut-the-box-server.azurewebsites.net" + "/generateNum1To6";
-    
+    const url = "https://shut-the-box-server.azurewebsites.net/generateNum1To6";
+
     for (i = 1; i < 3; i++) {
         const response = await fetch(url);
         const responseText = await response.text();
-        document.getElementById("die" + i).innerHTML = responseText;
+        console.log(response);
+        console.log(responseText);
+        document.getElementById("die" + i).value = responseText;
     }
 
     DoCalculations();
